@@ -55,13 +55,17 @@
     <br> 
 
     <form>
-        <div class="form-group">
+        <div class="form-group sm">
           <label for="nombre">Nombre y apellido</label>
-          <input type="name" class="form-control" id="nombre" placeholder="Nombre y apellido">
+          <input type="name" class="form-control" id="nombre" placeholder="Nombre y apellido" required>
         </div>
           <div class="form-group">
             <label for="Email">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
+            placeholder="Escriba su email" required >
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
               <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
           </div>
           
@@ -70,8 +74,9 @@
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div> -->
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea1">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" 
+            placeholder="Escriba su mensaje" required ></textarea>
           </div> <br>
           <button type="submit" class="btn btn-primary">Submit</button>
       </form>
